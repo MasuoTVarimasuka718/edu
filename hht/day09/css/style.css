@@ -67,9 +67,12 @@ a:focus-visible,
   place-items: center;
   padding: 4rem var(--space);
   color: #fff;
-  background:
-    linear-gradient(90deg, rgb(0 0 0 / 72%), rgb(0 0 0 / 18%)),
-    linear-gradient(135deg, #3e7562, #b97a45);
+ background:
+  linear-gradient(90deg, rgb(0 0 0 / 72%), rgb(0 0 0 / 18%)),
+  url("../images/masuo.webp");
+background-size: cover;
+background-position: center;
+
 }
 
 .hero__content {
@@ -145,5 +148,10 @@ a:focus-visible,
 @media (min-width: 42rem) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    background-position: center, 62% center;
   }
 }
